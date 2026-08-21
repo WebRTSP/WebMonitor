@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@import "webrtsp.react/WebRTSPPlayer.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-destructive: var(--destructive);
+}
+
+:root {
+  --primary: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+}
+
+.dark {
+  --primary: oklch(0.922 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+}
